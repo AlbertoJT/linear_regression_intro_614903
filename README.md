@@ -7,10 +7,12 @@ Hands-on lab template for the Linear Regression class. Follow along with the ins
 - `fundamentos_regresion_lineal.ipynb`: Linear regression fundamentals
 - `mpg_case/regression_on_mpg.ipynb`: Guided case — predict fuel efficiency (MPG)
 - `diamonds_case/regression_on_diamonds.ipynb`: Practice case — predict diamond prices
-- `calculations.py`: Plotting helpers
+- `california_case/vif_pvalue_selection.ipynb`: Variable selection with VIF and p-values (California Housing)
 - `pyproject.toml` / `uv.lock`: Project dependencies and the exact pinned versions
 - `.python-version`: Exact Python version used everywhere
 - `.devcontainer/`: GitHub Codespaces / Dev Container configuration
+
+Each case notebook starts with a "Funciones auxiliares de visualización" cell: run it once and then just call the plotting functions.
 
 The SQLite databases are downloaded automatically by the notebooks (they are not versioned).
 
