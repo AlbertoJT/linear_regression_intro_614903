@@ -1,94 +1,83 @@
-# Predictive Models Introduction
+# Linear Regression Intro — Students
 
-This repository contains Jupyter Notebooks focused on predictive modeling techniques, specifically covering Linear and Logistic Regression. The project is designed to help students understand and implement fundamental predictive modeling concepts.
-
-## Project Overview
-
-The project includes implementation and analysis of various predictive modeling techniques, such as:
-
-- Linear Regression Analysis
-- Logistic Regression
-- Model Evaluation and Validation
-- Statistical Analysis and Interpretation
-- Data Visualization and Exploration
+Hands-on lab template for the Linear Regression class. Follow along with the instructor and complete the empty cells in each notebook.
 
 ## Project Structure
 
-- `Intro a Regresion Lineal.ipynb`: Jupyter notebook covering Linear Regression concepts and implementation
-- `Intro a Regresion Logistica.ipynb`: Jupyter notebook focusing on Logistic Regression analysis
-- `requirements.txt`: List of Python packages required for this project
-- `SQLite_databases_for_learning_data_science/`: Directory containing various SQLite databases for practice
+- `fundamentos_regresion_lineal.ipynb`: Linear regression fundamentals
+- `mpg_case/regression_on_mpg.ipynb`: Guided case — predict fuel efficiency (MPG)
+- `diamonds_case/regression_on_diamonds.ipynb`: Practice case — predict diamond prices
+- `calculations.py`: Plotting helpers
+- `pyproject.toml` / `uv.lock`: Project dependencies and the exact pinned versions
+- `.python-version`: Exact Python version used everywhere
+- `.devcontainer/`: GitHub Codespaces / Dev Container configuration
+
+The SQLite databases are downloaded automatically by the notebooks (they are not versioned).
 
 ## Tools and Technologies
 
-- Python (3.x recommended)
-- Jupyter Notebook
-- Data Analysis Libraries:
-  - Pandas (≥2.3.1)
-  - Plotly (≥6.3.0)
-  - Scikit-learn (≥1.7.1)
-  - Category Encoders (≥2.8.1)
-  - SciPy (≥1.16.1)
-  - NumPy (≥2.3.2)
+- Python 3.14 (exact version in `.python-version`)
+- [uv](https://docs.astral.sh/uv/) to manage Python and dependencies
+- Jupyter Notebooks (VS Code + Jupyter extension)
+- pandas, NumPy, SciPy, scikit-learn, statsmodels, Plotly
 
-## Installation Instructions
+## Environment
 
-1. Clone this repository:
+The local environment and GitHub Codespaces are built from the same files, so they are identical:
+
+- `.python-version` pins the exact Python version (installed by uv, same build on every machine).
+- `uv.lock` pins the exact version of every package.
+- Codespaces runs `uv sync --frozen` when the container is created, which is the same command used locally.
+
+### Option A: GitHub Codespaces (recommended)
+
+Click **Code → Codespaces → Create codespace on main**. When the setup finishes, open any notebook and select the `.venv` kernel.
+
+### Option B: Local
+
+1. Install uv:
    ```bash
-   git clone https://github.com/jorgermzg15/predictive-models-intro.git
-   cd predictive-models-intro
+   # macOS
+   brew install uv
+
+   # Windows (PowerShell)
+   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
    ```
 
-2. Create a virtual environment:
+2. Clone this repository and create the environment:
    ```bash
-   # On macOS/Linux
-   python -m venv .venv
-   source .venv/bin/activate
-
-   # On Windows
-   python -m venv .venv
-   .\.venv\Scripts\activate
+   git clone https://github.com/jorgermzg15/linear_regression_intro_students.git
+   cd linear_regression_intro_students
+   uv sync --frozen
    ```
 
-3. Install the required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+3. Open the folder in VS Code and select the `.venv` interpreter/kernel in the notebooks.
 
-4. Launch Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
+### Updating dependencies (instructor)
 
-5. Open either `Intro a Regresion Lineal.ipynb` or `Intro a Regresion Logistica.ipynb` in your browser and start learning!
+```bash
+uv lock --upgrade   # resolve the newest compatible versions
+uv sync --frozen    # apply them locally
+```
+
+Commit `uv.lock` (and `.python-version` if you change it). Codespaces will pick up the same versions on the next rebuild.
 
 ## Troubleshooting
 
-If you encounter any issues:
-
-1. Make sure your virtual environment is activated (you should see `(.venv)` in your terminal)
-2. Try upgrading pip before installing requirements:
+1. Make sure the notebook kernel is the project's `.venv` (not a Conda/Anaconda environment).
+2. If the environment gets out of sync, recreate it:
    ```bash
-   pip install --upgrade pip
+   rm -rf .venv
+   uv sync --frozen
    ```
-3. If you have problems with any visualization, make sure Plotly is properly installed:
-   ```bash
-   pip install plotly --upgrade
-   ```
-4. If you encounter kernel issues in Jupyter:
-   ```bash
-   python -m ipykernel install --user
-   ```
+3. In Codespaces, if something breaks after changing `.devcontainer/`, run **Codespaces: Rebuild Container** from the command palette.
 
 ## For Students
 
-This repository is designed to be a learning resource for predictive modeling techniques. Each notebook is structured to build upon fundamental concepts. Make sure to:
-
-1. Follow the installation instructions carefully
+1. Follow the environment instructions carefully
 2. Execute the notebook cells in order
-3. Complete any exercises or challenges provided
+3. Complete the empty cells following the comments in each one
 4. Experiment with the code and parameters to deepen your understanding
-5. Make use of the provided SQLite databases for practice
 
 ## License
 
