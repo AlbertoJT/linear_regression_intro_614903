@@ -4,15 +4,20 @@ Hands-on lab template for the Linear Regression class. Follow along with the ins
 
 ## Project Structure
 
-- `fundamentos_regresion_lineal.ipynb`: Linear regression fundamentals
-- `mpg_case/regression_on_mpg.ipynb`: Guided case — predict fuel efficiency (MPG)
-- `diamonds_case/regression_on_diamonds.ipynb`: Practice case — predict diamond prices
+**Linear regression lab**
+- `fundamentos_regresion_lineal.ipynb`: Theory — OLS, coefficients and assumptions
+- `mpg_case/regression_on_mpg.ipynb`: 🎯 Hands-on lab — predict fuel efficiency (MPG): EDA, simple and multiple regression, VIF + p-values and RFECV
+
+**Extra practice**
+- `diamonds_case/regression_on_diamonds.ipynb`: Predict diamond prices
 - `california_case/vif_pvalue_selection.ipynb`: Variable selection with VIF and p-values (California Housing)
+
+**Environment**
 - `pyproject.toml` / `uv.lock`: Project dependencies and the exact pinned versions
 - `.python-version`: Exact Python version used everywhere
 - `.devcontainer/`: GitHub Codespaces / Dev Container configuration
 
-Each case notebook starts with a "Funciones auxiliares de visualización" cell: run it once and then just call the plotting functions.
+Each notebook starts with a "Preparación" section with helper functions: run those cells once and then just call the functions.
 
 The SQLite databases are downloaded automatically by the notebooks (they are not versioned).
 
@@ -78,7 +83,7 @@ Commit `uv.lock` (and `.python-version` if you change it). Codespaces will pick 
 
 1. Follow the environment instructions carefully
 2. Execute the notebook cells in order
-3. Complete the empty cells following the comments in each one
+3. Complete the cells marked with ✍️ following the hints in each one
 4. Experiment with the code and parameters to deepen your understanding
 
 ## License
