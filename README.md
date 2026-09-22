@@ -4,13 +4,15 @@ Hands-on lab template for the Linear Regression class. Follow along with the ins
 
 ## Project Structure
 
-**Linear regression lab**
-- `fundamentos_regresion_lineal.ipynb`: Theory — OLS, coefficients and assumptions
-- `mpg_case/regression_on_mpg.ipynb`: 🎯 Hands-on lab — predict fuel efficiency (MPG): EDA, simple and multiple regression, VIF + p-values and RFECV
+**Session 1 — Linear regression**
+- `01-regresion-lineal/fundamentos.ipynb`: Theory — OLS, coefficients and assumptions
+- `01-regresion-lineal/caso_mpg.ipynb`: 🎯 Hands-on lab — predict fuel efficiency (MPG): EDA, simple and multiple regression, VIF + p-values and RFECV
+
+Each session gets its own numbered folder; new ones appear as the course advances.
 
 **Extra practice**
-- `diamonds_case/regression_on_diamonds.ipynb`: Predict diamond prices
-- `california_case/vif_pvalue_selection.ipynb`: Variable selection with VIF and p-values (California Housing)
+- `extra/diamonds/regresion_lineal.ipynb`: Predict diamond prices
+- `extra/california/seleccion_vif_pvalues.ipynb`: Variable selection with VIF and p-values (California Housing)
 
 **Environment**
 - `pyproject.toml` / `uv.lock`: Project dependencies and the exact pinned versions
