@@ -53,8 +53,8 @@ Click **Code → Codespaces → Create codespace on main**. When the setup finis
 
 2. Clone this repository and create the environment:
    ```bash
-   git clone https://github.com/jorgermzg15/linear_regression_intro_students.git
-   cd linear_regression_intro_students
+   git clone https://github.com/jorgermzg15/modelos-predictivos-students.git
+   cd modelos-predictivos-students
    uv sync --frozen
    ```
 

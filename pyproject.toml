@@ -1,5 +1,5 @@
 [project]
-name = "linear-regression-intro-students"
+name = "modelos-predictivos-students"
 version = "0.1.0"
 description = "Hands-on lab de Regresión Lineal (versión para estudiantes)."
 readme = "README.md"
