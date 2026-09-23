@@ -8,6 +8,10 @@ Hands-on lab template for the Linear Regression class. Follow along with the ins
 - `01-regresion-lineal/fundamentos.ipynb`: Theory — OLS, coefficients and assumptions
 - `01-regresion-lineal/caso_mpg.ipynb`: 🎯 Hands-on lab — predict fuel efficiency (MPG): EDA, simple and multiple regression, VIF + p-values and RFECV
 
+**Session 2 — Logistic regression**
+- `02-regresion-logistica/fundamentos.ipynb`: Theory — sigmoid, log-odds and maximum likelihood
+- `02-regresion-logistica/caso_titanic.ipynb`: 🎯 Hands-on lab — who survived the Titanic: imputation, odds ratios, confusion matrix, precision/recall, decision threshold and ROC/AUC
+
 Each session gets its own numbered folder; new ones appear as the course advances.
 
 **Extra practice**
