@@ -11,6 +11,7 @@ Hands-on lab template for the Linear Regression class. Follow along with the ins
 **Session 2 — Logistic regression**
 - `02-regresion-logistica/fundamentos.ipynb`: Theory — sigmoid, log-odds and maximum likelihood
 - `02-regresion-logistica/caso_titanic.ipynb`: 🎯 Hands-on lab — who survived the Titanic: imputation, odds ratios, confusion matrix, precision/recall, decision threshold and ROC/AUC
+- `02-regresion-logistica/slides/`: Logistic regression infographic
 
 Each session gets its own numbered folder; new ones appear as the course advances.
 
